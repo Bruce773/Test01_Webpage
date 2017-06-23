@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+</head>
+<body id="top">
+<header role="banner">
+<h1>Test01</h1>
+</header>
+	<nav role="navigation">
+		<ul>
+		<li><a href="test01Home.html">Home</a></li>
+		<li><a href="test01Reference.html">Reference</a></li>
+		<li><a href="test01CSS.html">CSS</a></li>
+		<li><a href="test01Javascript.html">Javascript</a></li>
+	</ul>
+	<h2>Index</h2>
+	<ol>
+		<li><a href="#one">The basics</a></li>
+		<li><a href="#two">Using classes</a></li>
+		<li><a href="#three">Dealing with Fonts</a></li>
+		<ul>
+			<li><a href="#four">Font-Size</a></li>
+			<li><a href="#five">Font-Family (Needs to be created)</a></li>
+			<li><a href="#six">Font-Weight (Needs to be created)</a></li>
+			<li><a href="#seven">Font-Style (Needs to be created)</a></li>
+		</ul>
+		<li><a href="#eight">More CSS Properties</a></li>
+	</ol>
+	</nav>
+<main role="main">
+<article role="article">
+
+<header>
+	<h2>CSS</h2>
+</header>
+
+<section>
+	<h3 id="one">The Basics</h3>
+	<p>CSS stands for Cascading Style Sheets. It allows you to style your webpages in very specific ways. Primarily, you can style your webpage in three ways using CSS syntaxt (In-line, Imbeded, and External) (1)In-line styling: </p>
+	<pre><code>&lt;h1 color:red; font-weight:normal;&gt;This text will be affected by both of those properties &lt;/h1&gt;</code></pre>
+	<p>(2)Imbeded styling using the Style element (this will make a global h1 selector):</p>
+	<pre><code>&lt;head&gt;
+  &lt;style&gt;
+     h1 {
+      color:red;
+      font-weight:normal;
+     }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This text will be affected by both of those properties&lt;/h1&gt;
+&lt;/body&gt;</code></pre>
+<p>(3)Externalized styling using the link element. The same syntax that we used above, as far as CSS syntax, also applies here.First, you need to create a normal text document (the same as you did for HTML). Then, copy all of your CSS code into it. When you go to save it, save it as a .css file. Then, in the HTML file that you want to link to, place this line of code in the head:</p>
+<pre><code>&lt;head&gt;
+  &lt;link href="<i>yourCssFileName.css</i>" rel="stylesheet" type="text/css"&gt;
+&lt;/head&gt;
+</code></pre>
+</section>
+
+<section>
+	<h3 id="two">Using Classes</h3>
+	<p>You can also use CSS to make non-global selectors. Meaning, only elements with their class set with the same value as the class in the head will be affected. This also means that you can apply this class to <b>any</b> element.</p>
+	<pre><code>&lt;head&gt;
+  &lt;style&gt;
+     .alert {
+      color:red;
+      font-weight:normal;
+     }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="alert"&gt;This text will be affected by both of those properties&lt;/h1&gt;
+  &lt;h1 class="alert"&gt;This text will also be affected by both of those properties&lt;/h1&gt;
+&lt;/body&gt;</code></pre>
+<p>This will make a non-global selector that will <b>only</b> apply to h2s with their classes set to alert:</p>
+	<pre><code>&lt;head&gt;
+  &lt;style&gt;
+     h2.alert {
+      color:red;
+      font-weight:normal;
+     }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2 class="alert"&gt;This text will be affected by both of those properties&lt;/h2&gt;
+  &lt;h2&gt;This text will <b>not</b> be affected by both of those properties&lt;/h2&gt;
+&lt;/body&gt;</code></pre>
+</section>
+<section>
+ <h3 id="three">Dealing with Fonts</h3>
+	<p>There is a <b>very</b> big list of things CSS can style in the fonts category. A few of them are: font-size, font-family, font-weight, font-style. 
+	<h4 id="four">Font-Size</h4>
+	When dealing with font sizes, 2em means that whatever the default font size is ie(16px) it will double that ie(32px). If we said font-size:3em;, it would triple it ie(48px). This allows us to keep a united, global look accross all of the plateforms our site might be viewed on.</p>
+</section>
+<section>
+	<h3 id="eight">More CSS Properties</h3>
+	<p>Here, I'm just going to list a few more <i>random</i> CSS properites that may, one day, come in handy: 
+	<ul>
+	<li>text-align</li>
+	<li>line-height</li>
+	<li>margin:top left/right bottom</li> 
+	<li>*width: %60</li> 
+	<li>font:%100 (in this case, the %100 means about the same as 1em. It just means "give me your default font size".)</li>
+	<li>background-color (or, you could just do background: <i>and specify what kind of background you'd like</i>)</li>
+	<li>color (this color property acts as a "foreground" property. If you use it with a h element, it will affect it's colour.)</li>
+	<li>border-bottom: 10px solid gold; (this boarder can be set to be right, left, top, or bottom.)</li>
+	</ul>
+	*The width property is <b><i>really</i></b> neat, see if you can mess around with it a bit.</p>
+</section>
+
+<a href="#top">Back to top</a>
+</article>
+</main>
+<footer role="contentinfo">
+<h5>&copy;Bruce Johnson</h5>
+</footer>
+</body>
+</HTML>

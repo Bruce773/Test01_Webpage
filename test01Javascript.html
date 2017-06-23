@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+</head>
+<body>
+<header role="banner">
+<h1>Test01</h1>
+</header>
+	<nav role="navigation">
+		<ul>
+		<li><a href="test01Home.html">Home</a></li>
+		<li><a href="test01Reference.html">Reference</a></li>
+		<li><a href="test01CSS.html">CSS</a></li>
+		<li><a href="test01Javascript.html">Javascript</a></li>
+	</ul>
+	</nav>
+<main role="main">
+<article role="article">
+
+<header></header>
+
+<section></section>
+
+<section>
+	<aside role="complementary"></aside>
+</section>
+
+</article>
+</main>
+<footer role="contentinfo">
+<br>
+<h5>&copy;Bruce Johnson</h5>
+</footer>
+ <script type="text/javascript">
+  	//tabbed panels
+  	//display globals to hold all the links and all the panel elements
+  	var tabLinks;
+  	var tabPanels;
+   window.onload = function() {
+   	//set teh initial panel state
+   	//listen for clicks on tabs
+   	//When the pages loads, grab the li elements
+   	tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+   	//Now get all the tab panel container divs
+   	tabPanels = document.getElementById("containers").getElementsByTagName("div"); 
+    //activate the _first_ one
+    displayPanel(tabLinks[0]); //Javascript starts counting at 0 
+    //attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
+    for (var i = 0; i < tabLinks.length; i++) {
+    	tabLinks[i].onclick = function() [
+    	]
+    } 
+
+   }
+
+   function displayPanel() {
+   	//respond to tab clicks
+   	//change panel display and activate tabs
+
+   }
+ </script>
+</body>
+</HTML>
