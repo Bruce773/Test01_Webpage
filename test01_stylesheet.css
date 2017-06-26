@@ -109,6 +109,10 @@ footer {
 	line-height: 4em;
 	margin-top: 1em;
 }
+table, th, td {
+    border: 2px solid black;
+    text-align: center;
+}
 blockquote {
 	font-style: italic;
 }
