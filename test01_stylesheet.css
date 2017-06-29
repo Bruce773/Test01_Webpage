@@ -44,6 +44,11 @@ h5 {
 p {
 	margin-bottom: 1em;
 }
+.navButtons a{ /* I'm using this for the nav bar. */
+	text-align: center;
+    background: silver;
+    padding: 10px;
+}
 a {
 	color: rgb(72, 129, 234);
 }
