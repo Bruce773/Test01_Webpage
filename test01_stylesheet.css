@@ -50,6 +50,9 @@ p {
 	margin-bottom: 1em;
 	font-family: 'Quicksand', sans-serif;
 }
+.navButtons { /* I'm using this for the nav bar. */
+	text-align: center;
+}
 .navButtons a{ /* I'm using this for the nav bar. */
 	text-align: center;
     background: lightslategrey;
