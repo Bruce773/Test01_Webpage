@@ -21,21 +21,26 @@ body {
 	background: rgb(188,143,143);
 	line-height: 1.8;
 }
+h1, h2, h3, h4{
+	font-family: 'Dancing Script', cursive;
+	font-size: 3em;
+}
 h1 {
-	font: 1.6em Verdana, Geneva, sans-serif;
+	/*font: 1.6em Verdana, Geneva, sans-serif;*/
 	margin-bottom: .4em;
 	color: rgb(70,130,180);
 }
 h2 {
-	font: 2.2em Georgia, "Times New Roman", Times, serif;
 	margin-bottom: .2em;
+	font-size: 2em;
 }
 h3 {
 	font-size: 1.6em;
+	font-size: 2em;
 }
 
 h4 {
-	font-size:1.3em;
+	font-size:150%;
 }
 h5 {
 	text-align: center;
@@ -43,14 +48,17 @@ h5 {
 }
 p {
 	margin-bottom: 1em;
+	font-family: 'Quicksand', sans-serif;
 }
 .navButtons a{ /* I'm using this for the nav bar. */
 	text-align: center;
-    background: silver;
+    background: lightslategrey;
     padding: 10px;
+    text-decoration: none;
 }
 a {
-	color: rgb(72, 129, 234);
+	/*color: rgb(72, 129, 234);*/
+	color: lightgray;
 }
 a:hover {
 	color: rgb(120, 97, 55);
