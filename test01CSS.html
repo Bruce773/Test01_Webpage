@@ -28,8 +28,8 @@
 		<ul>
 			<li><a href="#four">Font-Size</a></li>
 			<li><a href="#five">Font-Family</a></li>
-			<li><a href="#six">Font-Weight (Needs to be created)</a></li>
-			<li><a href="#seven">Font-Style (Needs to be created)</a></li>
+			<li><a href="#six">Font-Weight</a></li>
+			<li><a href="#seven">Font-Style</a></li>
 		</ul>
 		<li><a href="#eight">More CSS Properties</a></li>
 	</ol>
@@ -106,11 +106,23 @@
 	It is recommended that you place it before the link to the stylesheet that you're using. After that, copy the CSS code in the Specify in CSS section for that font. Then, in you your CSS stylesheet, paste that code in the body tag (if you want to apply the font to the entire page). </p>
 </section>
 <section>
+	<h4 id="six">Font-Weight</h4>
+	<p>The font weight has to do with the boldness of the text. The thickness of the font can range between 100 and 900 with 100 being the lightest and 900 being the darkest. In your stylesheet, it will look like this:</p>
+<pre><code>h1 {
+ font-weight: 100;
+}</code></pre>
+<p>You can also set the font-weight to normal witch is equal to 400. And, the regular bold tag is equal to 700.</p>
+</section>
+<section>
+	<h4 id="seven">Font-Style</h4>
+	<p>Font style is used to add or remove the italic style. It has three different styles: Italic, Oblique, and Normal.</p>
+</section>
+<section>
 	<h3 id="eight">More CSS Properties</h3>
 	<p>Here, I'm just going to list a few more <i>random</i> CSS properites that may, one day, come in handy: 
 	<ul>
 	<li>text-align</li>
-	<li>line-height</li>
+	<li>line-height (line height affects the height of the <i>space in between</i> all of the text, like in a paragraph. Usually, you want the line to be <b>bigger</b> than the font size. ie : <b>font-size: 1.5; line-height: 2.5;</b>)</li>
 	<li>margin:top left/right bottom</li> 
 	<li>*width: %60</li> 
 	<li>font:%100 (in this case, the %100 means about the same as 1em. It just means "give me your default font size".)</li>
