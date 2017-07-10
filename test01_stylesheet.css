@@ -3,7 +3,7 @@ body {
     background: rgb(176, 196, 222);
     /* Beccapurple */
     margin: 0;
-    max-width: 1200 px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -35,8 +35,8 @@ p {
 
 body {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 100 %;
-    width: 80 %;
+    font-size: 100%;
+    width: 80%;
     margin-right: auto;
     margin -left: auto;
     padding: 2.5% 2.5% 0;
