@@ -23,7 +23,7 @@ h2,
 h3,
 h4 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 p {
@@ -35,7 +35,7 @@ p {
 
 body {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 100%;
+    font-size: 170%;
     width: 80%;
     margin-right: auto;
     margin -left: auto;
@@ -51,17 +51,17 @@ h1 {
 }
 
 h2 {
-    margin-bottom: .2em;
+    margin-bottom: .3em;
     font-size: 2em;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-size: 2em;
 }
 
 h4 {
-    font-size: 150%;
+    font-size: 170%;
 }
 
 h5 {
@@ -92,10 +92,10 @@ a: hover {
 }
 
 pre {
-    font-size: 1.4em;
+    font-size: 1em;
     color: white;
     padding: .5em 1em;
-    border-left: 1em solid# A68048;
+    border-left: 1em solid #A68048;
     background: #666;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
