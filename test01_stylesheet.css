@@ -17,7 +17,11 @@ h6 {
     padding: 0;
     color: rgb(70, 130, 180);
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
 }
@@ -31,8 +35,8 @@ p {
 
 body {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 100 % ;
-    width: 80 % ;
+    font-size: 100 %;
+    width: 80 %;
     margin-right: auto;
     margin -left: auto;
     padding: 2.5% 2.5% 0;
@@ -57,7 +61,7 @@ h3 {
 }
 
 h4 {
-    font-size: 150% ;
+    font-size: 150%;
 }
 
 h5 {
@@ -188,22 +192,22 @@ blockquote {
 }
 
 # menu-outer {
-        height: 84 px;
-        /*background: url(bar-bg.jpg) repeat-x;*/
-    }
+    height: 84 px;
+    /*background: url(bar-bg.jpg) repeat-x;*/
+}
 
-    .table {
-        display: table;
-        /* Allow the centering to work */
-        margin: 0 auto;
-    }
+.table {
+    display: table;
+    /* Allow the centering to work */
+    margin: 0 auto;
+}
 
-    ul# horizontal-list {
-        min-width: 696px;
-        list-style: none;
-        padding-top: 20px;
-    }
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
 
-    ul# horizontal-list li {
-        display: inline;
-    }
+ul#horizontal-list li {
+    display: inline;
+}
