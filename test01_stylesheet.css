@@ -1,7 +1,7 @@
 html,
 body {
+   /* Beccapurple */
     background: rgb(176, 196, 222);
-    /* Beccapurple */
     margin: 0;
     max-width: 1200px;
     margin: 0 auto;
@@ -202,13 +202,13 @@ blockquote {
     margin: 0 auto;
 }
 
-ul #horizontal-list {
+ul#horizontal-list {
     display: inline;
     min-width: 696px;
     list-style: none;
     padding-top: 20px;
 }
 
-ul #horizontal-list li {
-    display: block;
+ul#horizontal-list li {
+    display: inline;
 }
