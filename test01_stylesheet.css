@@ -3,7 +3,7 @@ body {
     background: rgb(176, 196, 222);
     /* Beccapurple */
     margin: 0;
-    max-width: 1200px;
+    max-width: 1200 px;
     margin: 0 auto;
 }
 
@@ -12,35 +12,32 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: rgb(70, 130, 180);
+}
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
 p {
     margin: 0;
     padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: rgb(70, 130, 180);
+    margin-bottom: 1em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 100%;
-    width: 80%;
+    font-size: 100 % ;
+    width: 80 % ;
     margin-right: auto;
-    margin-left: auto;
+    margin -left: auto;
     padding: 2.5% 2.5% 0;
     background: rgb(188, 143, 143);
     line-height: 1.8;
-}
-
-h1,h2,h3,h4 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3em;
 }
 
 h1 {
@@ -60,17 +57,12 @@ h3 {
 }
 
 h4 {
-    font-size: 150%;
+    font-size: 150% ;
 }
 
 h5 {
     text-align: center;
     font-size: 0.8em;
-}
-
-p {
-    margin-bottom: 1em;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .navButtons {
@@ -91,15 +83,15 @@ a {
     color: lightgray;
 }
 
-a:hover {
+a: hover {
     color: rgb(120, 97, 55);
 }
 
 pre {
-    font-size: 1.4em;
+    font-size: 1.4e m;
     color: white;
-    padding: .5em 1em;
-    border-left: 1em solid #A68048;
+    padding: .5e m 1e m;
+    border-left: 1e m solid# A68048;
     background: #666;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -195,23 +187,23 @@ blockquote {
     text-align: center;
 }
 
-#menu-outer {
-    height: 84px;
-    /*background: url(bar-bg.jpg) repeat-x;*/
-}
+# menu-outer {
+        height: 84 px;
+        /*background: url(bar-bg.jpg) repeat-x;*/
+    }
 
-.table {
-    display: table;
-    /* Allow the centering to work */
-    margin: 0 auto;
-}
+    .table {
+        display: table;
+        /* Allow the centering to work */
+        margin: 0 auto;
+    }
 
-ul#horizontal-list {
-    min-width: 696px;
-    list-style: none;
-    padding-top: 20px;
-}
+    ul# horizontal-list {
+        min-width: 696px;
+        list-style: none;
+        padding-top: 20px;
+    }
 
-ul#horizontal-list li {
-    display: inline;
-}
+    ul# horizontal-list li {
+        display: inline;
+    }
