@@ -92,10 +92,10 @@ a: hover {
 }
 
 pre {
-    font-size: 1.4e m;
+    font-size: 1.4em;
     color: white;
-    padding: .5e m 1e m;
-    border-left: 1e m solid# A68048;
+    padding: .5em 1em;
+    border-left: 1em solid# A68048;
     background: #666;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -192,7 +192,7 @@ blockquote {
 }
 
 # menu-outer {
-    height: 84 px;
+    height: 84px;
     /*background: url(bar-bg.jpg) repeat-x;*/
 }
 
@@ -202,13 +202,13 @@ blockquote {
     margin: 0 auto;
 }
 
-ul#horizontal-list {
+ul #horizontal-list {
     display: inline;
     min-width: 696px;
     list-style: none;
     padding-top: 20px;
 }
 
-ul#horizontal-list li {
-    display: inline;
+ul #horizontal-list li {
+    display: block;
 }
