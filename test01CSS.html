@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
-	<meta charset="UTF-8">
+    <link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Quicksand" rel="stylesheet">
+    <meta charset="UTF-8">
 </head>
+
 <body id="top">
-	<header role="banner">
-		<h1 class="centerText">Test01</h1>
-	</header>
-	<nav role="navigation">
-		<div id="menu-outer" class="centerText">
-  <div class="table">
-    <ul id="horizontal-list" class="navButtons">
-		<li> <a href="https://bruce773.github.io/Test01_Webpage/">Home</a> &nbsp;</li>
-		<li> <a href="test01UnderConstruction.html">Reference</a> &nbsp;</li>
-		<li> <a href="test01CSS.html">CSS</a> &nbsp;</li>
-		<li> <a href="test01UnderConstruction.html">Javascript</a> &nbsp;</li>
-		<li> <a href="test01Git.html">Git Reference</a> &nbsp;</li>
-    </ul>
-  </div>
-</div>
-	<h2>Index</h2>
-	<ol>
-		<li><a href="#one">The basics</a></li>
-		<li><a href="#two">Using classes</a></li>
-		<li><a href="#three">Dealing with Fonts</a></li>
-		<ul>
-			<li><a href="#four">Font-Size</a></li>
-			<li><a href="#five">Font-Family</a></li>
-			<li><a href="#six">Font-Weight</a></li>
-			<li><a href="#seven">Font-Style</a></li>
-		</ul>
-		<li><a href="#eight">More CSS Properties</a></li>
-		<li><a href="#nine">Using the display property</a></li>
-	</ol>
-	</nav>
-<main role="main">
-<article role="article">
-
-<header>
-	<h2>CSS</h2>
-</header>
-
-<section>
-	<h3 id="one">The Basics</h3>
-	<p>CSS stands for Cascading Style Sheets. It allows you to style your webpages in very specific ways. Primarily, you can style your webpage in three ways using CSS syntaxt (In-line, Imbeded, and External) (1)In-line styling: </p>
-	<pre><code>&lt;h1 color:red; font-weight:normal;&gt;This text will be affected by both of those properties &lt;/h1&gt;</code></pre>
-	<p>(2)Imbeded styling using the Style element (this will make a global h1 selector):</p>
-	<pre><code>&lt;head&gt;
+    <header role="banner">
+        <h1 class="centerText">Test01</h1>
+    </header>
+    <nav role="navigation">
+        <div id="menu-outer" class="centerText">
+            <div class="table">
+                <ul id="horizontal-list" class="navButtons">
+                    <li> <a href="https://bruce773.github.io/Test01_Webpage/">Home</a> &nbsp;</li>
+                    <li> <a href="test01UnderConstruction.html">Reference</a> &nbsp;</li>
+                    <li> <a href="test01CSS.html">CSS</a> &nbsp;</li>
+                    <li> <a href="test01UnderConstruction.html">Javascript</a> &nbsp;</li>
+                    <li> <a href="test01Git.html">Git Reference</a> &nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Index</h2>
+        <ol>
+            <li><a href="#one">The basics</a></li>
+            <li><a href="#two">Using classes</a></li>
+            <li><a href="#three">Dealing with Fonts</a></li>
+            <ul>
+                <li><a href="#four">Font-Size</a></li>
+                <li><a href="#five">Font-Family</a></li>
+                <li><a href="#six">Font-Weight</a></li>
+                <li><a href="#seven">Font-Style</a></li>
+            </ul>
+            <li><a href="#eight">More CSS Properties</a></li>
+            <li><a href="#nine">Using the display property</a></li>
+        </ol>
+    </nav>
+    <main role="main">
+        <article role="article">
+            <header>
+                <h2>CSS</h2>
+            </header>
+            <section>
+                <h3 id="one">The Basics</h3>
+                <p>CSS stands for Cascading Style Sheets. It allows you to style your webpages in very specific ways. Primarily, you can style your webpage in three ways using CSS syntaxt (In-line, Imbeded, and External) (1)In-line styling: </p>
+                <pre><code>&lt;h1 color:red; font-weight:normal;&gt;This text will be affected by both of those properties &lt;/h1&gt;</code></pre>
+                <p>(2)Imbeded styling using the Style element (this will make a global h1 selector):</p>
+                <pre><code>&lt;head&gt;
   &lt;style&gt;
      h1 {
       color:red;
@@ -58,17 +59,16 @@
 &lt;body&gt;
   &lt;h1&gt;This text will be affected by both of those properties&lt;/h1&gt;
 &lt;/body&gt;</code></pre>
-<p>(3)Externalized styling using the link element. The same syntax that we used above, as far as CSS syntax, also applies here.First, you need to create a normal text document (the same as you did for HTML). Then, copy all of your CSS code into it. When you go to save it, save it as a .css file. Then, in the HTML file that you want to link to, place this line of code in the head:</p>
-<pre><code>&lt;head&gt;
+                <p>(3)Externalized styling using the link element. The same syntax that we used above, as far as CSS syntax, also applies here.First, you need to create a normal text document (the same as you did for HTML). Then, copy all of your CSS code into it. When you go to save it, save it as a .css file. Then, in the HTML file that you want to link to, place this line of code in the head:</p>
+                <pre><code>&lt;head&gt;
   &lt;link href="<i>yourCssFileName.css</i>" rel="stylesheet" type="text/css"&gt;
 &lt;/head&gt;
 </code></pre>
-</section>
-
-<section>
-	<h3 id="two">Using Classes</h3>
-	<p>You can also use CSS to make non-global selectors. Meaning, only elements with their class set with the same value as the class in the head will be affected. This also means that you can apply this class to <b>any</b> element.</p>
-	<pre><code>&lt;head&gt;
+            </section>
+            <section>
+                <h3 id="two">Using Classes</h3>
+                <p>You can also use CSS to make non-global selectors. Meaning, only elements with their class set with the same value as the class in the head will be affected. This also means that you can apply this class to <b>any</b> element.</p>
+                <pre><code>&lt;head&gt;
   &lt;style&gt;
      .alert {
       color:red;
@@ -80,8 +80,8 @@
   &lt;h1 class="alert"&gt;This text will be affected by both of those properties&lt;/h1&gt;
   &lt;h1 class="alert"&gt;This text will also be affected by both of those properties&lt;/h1&gt;
 &lt;/body&gt;</code></pre>
-<p>This will make a non-global selector that will <b>only</b> apply to h2s with their classes set to alert:</p>
-	<pre><code>&lt;head&gt;
+                <p>This will make a non-global selector that will <b>only</b> apply to h2s with their classes set to alert:</p>
+                <pre><code>&lt;head&gt;
   &lt;style&gt;
      h2.alert {
       color:red;
@@ -93,57 +93,56 @@
   &lt;h2 class="alert"&gt;This text will be affected by both of those properties&lt;/h2&gt;
   &lt;h2&gt;This text will <b>not</b> be affected by both of those properties&lt;/h2&gt;
 &lt;/body&gt;</code></pre>
-</section>
-<section>
- <h3 id="three">Dealing with Fonts</h3>
-	<p>There is a <b>very</b> big list of things CSS can style in the fonts category. A few of them are: font-size, font-family, font-weight, font-style. 
-	<h4 id="four">Font-Size</h4>
-	When dealing with font sizes, 2em means that whatever the default font size is ie(16px) it will double that ie(32px). If we said font-size:3em;, it would triple it ie(48px). This allows us to keep a united, global look accross all of the plateforms our site might be viewed on.</p>
-</section>
-<section>
-	<h4 id="five">Font-Family</h3>
+            </section>
+            <section>
+                <h3 id="three">Dealing with Fonts</h3>
+                <p>There is a <b>very</b> big list of things CSS can style in the fonts category. A few of them are: font-size, font-family, font-weight, font-style.
+                    <h4 id="four">Font-Size</h4> When dealing with font sizes, 2em means that whatever the default font size is ie(16px) it will double that ie(32px). If we said font-size:3em;, it would triple it ie(48px). This allows us to keep a united, global look accross all of the plateforms our site might be viewed on.</p>
+            </section>
+            <section>
+                <h4 id="five">Font-Family</h3>
 	<p>A very useful resource for finding font families, is the <a href="https://fonts.google.com/" target="_blank">Google Fonts site</a>.
 	When you find a font that you like, copy the link and place it in the head of the page that you want to apply it to.
 	It is recommended that you place it before the link to the stylesheet that you're using. After that, copy the CSS code in the Specify in CSS section for that font. Then, in you your CSS stylesheet, paste that code in the body tag (if you want to apply the font to the entire page). </p>
 </section>
 <section>
 	<h4 id="six">Font-Weight</h4>
-	<p>The font weight has to do with the boldness of the text. The thickness of the font can range between 100 and 900 with 100 being the lightest and 900 being the darkest. In your stylesheet, it will look like this:</p>
-<pre><code>h1 {
+                <p>The font weight has to do with the boldness of the text. The thickness of the font can range between 100 and 900 with 100 being the lightest and 900 being the darkest. In your stylesheet, it will look like this:</p>
+                <pre><code>h1 {
  font-weight: 100;
 }</code></pre>
-<p>You can also set the font-weight to normal witch is equal to 400. And, the regular bold tag is equal to 700.</p>
-</section>
-<section>
-	<h4 id="seven">Font-Style</h4>
-	<p>Font style is used to add or remove the italic style. It has three different styles: Italic, Oblique, and Normal.</p>
-</section>
-<section>
-	<h3 id="eight">More CSS Properties</h3>
-	<p>Here, I'm just going to list a few more <i>random</i> CSS properites that may, one day, come in handy: 
-	<ul>
-	<li>text-align</li>
-	<li>line-height (line height affects the height of the <i>space in between</i> all of the text, like in a paragraph. Usually, you want the line to be <b>bigger</b> than the font size. ie : <b>font-size: 1.5; line-height: 2.5;</b> If you use a relative unit as the line height, it will always look at the font-size and then change based on that. The relative units are: em and %. ie : <b>font-size: 20; line-height: 150%;</b> Because the line-height is set to 150<b>%</b>, it will always be 1 1/2 times as big as the nearest unit in this case the font-size property)</li>
-	<li>margin:top left/right bottom</li> 
-	<li>*width: %60</li> 
-	<li>font:%100 (in this case, the %100 means about the same as 1em. It just means "give me your default font size".)</li>
-	<li>background-color (or, you could just do background: <i>and specify what kind of background you'd like</i>)</li>
-	<li>color (this color property acts as a "foreground" property. If you use it with a h element, it will affect it's colour.)</li>
-	<li>border-bottom: 10px solid gold; (this boarder can be set to be right, left, top, or bottom.)</li>
-	<li>text-decoration: (there are four properties that can go here <i><u>underline</u>, overline, strikethrough, and none</i>)</li>
-	</ul>
-	*The width property is <b><i>really</i></b> neat, see if you can mess around with it a bit.</p>
-</section>
-<section>
-	<h3 id="nine">Using the display property</h3>
-	<p>There are several different properties that we can use with this. The display property deals mainly with block and inline elements. It will alow you to set an inline element, such as span, to act like a block element. And, it allows a block element, such as a header tag, to act like an inline element. To see more information about block elements and inline elements, please see the <a href="index.html#three">Block vs. Inline section</a> on the Home page. For more detailed info about the display property, please see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">this MDN page</a> on the CSS display property. The three main properties, are <i>inline, block, and inline-block</i>. If set as a inline-block, the element will act like an inline element, but you will be able to edit the size that it takes up, like you can with a block element. The margins will also be set both vertically and horizontally if you set the element as a inline-block. Otherwise, an inline element's margins properties will only be set horizontally</p>
-</section>
-
-<a href="#top">Back to top</a>
-</article>
-</main>
-<footer role="contentinfo">
-<h5>&copy;Bruce Johnson</h5>
-</footer>
+                <p>You can also set the font-weight to normal witch is equal to 400. And, the regular bold tag is equal to 700.</p>
+            </section>
+            <section>
+                <h4 id="seven">Font-Style</h4>
+                <p>Font style is used to add or remove the italic style. It has three different styles: Italic, Oblique, and Normal.</p>
+            </section>
+            <section>
+                <h3 id="eight">More CSS Properties</h3>
+                <p>Here, I'm just going to list a few more <i>random</i> CSS properites that may, one day, come in handy:
+                    <ul>
+                        <li>text-align</li>
+                        <li>line-height (line height affects the height of the <i>space in between</i> all of the text, like in a paragraph. Usually, you want the line to be <b>bigger</b> than the font size. ie : <b>font-size: 1.5; line-height: 2.5;</b> If you use a relative unit as the line height, it will always look at the font-size and then change based on that. The relative units are: em and %. ie : <b>font-size: 20; line-height: 150%;</b> Because the line-height is set to 150<b>%</b>, it will always be 1 1/2 times as big as the nearest unit in this case the font-size property)</li>
+                        <li>margin:top left/right bottom</li>
+                        <li>*width: %60</li>
+                        <li>font:%100 (in this case, the %100 means about the same as 1em. It just means "give me your default font size".)</li>
+                        <li>background-color (or, you could just do background: <i>and specify what kind of background you'd like</i>)</li>
+                        <li>color (this color property acts as a "foreground" property. If you use it with a h element, it will affect it's colour.)</li>
+                        <li>border-bottom: 10px solid gold; (this boarder can be set to be right, left, top, or bottom.)</li>
+                        <li>text-decoration: (there are four properties that can go here <i><u>underline</u>, overline, strikethrough, and none</i>)</li>
+                    </ul>
+                    *The width property is <b><i>really</i></b> neat, see if you can mess around with it a bit.</p>
+            </section>
+            <section>
+                <h3 id="nine">Using the display property</h3>
+                <p>There are several different properties that we can use with this. The display property deals mainly with block and inline elements. It will alow you to set an inline element, such as span, to act like a block element. And, it allows a block element, such as a header tag, to act like an inline element. To see more information about block elements and inline elements, please see the <a href="index.html#three">Block vs. Inline section</a> on the Home page. For more detailed info about the display property, please see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">this MDN page</a> on the CSS display property. The three main properties, are <i>inline, block, and inline-block</i>. If set as a inline-block, the element will act like an inline element, but you will be able to edit the size that it takes up, like you can with a block element. The margins will also be set both vertically and horizontally if you set the element as a inline-block. Otherwise, an inline element's margins properties will only be set horizontally</p>
+            </section>
+            <a href="#top">Back to top</a>
+        </article>
+    </main>
+    <footer role="contentinfo">
+        <h5>&copy;Bruce Johnson</h5>
+    </footer>
 </body>
+
 </html>

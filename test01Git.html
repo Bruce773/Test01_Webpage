@@ -1,152 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
-	<meta charset="UTF-8">
+    <link href="test01_stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Quicksand" rel="stylesheet">
+    <meta charset="UTF-8">
 </head>
+
 <body id="top">
-	<header role="banner">
-		<h1 class="centerText" id="top">Test01</h1>
-	</header>
-	<nav role="navigation">
-		<div id="menu-outer" class="centerText">
-  <div class="table">
-    <ul id="horizontal-list" class="navButtons">
-		<li> <a href="https://bruce773.github.io/Test01_Webpage/">Home</a> &nbsp;</li>
-		<li> <a href="test01UnderConstruction.html">Reference</a> &nbsp;</li>
-		<li> <a href="test01CSS.html">CSS</a> &nbsp;</li>
-		<li> <a href="test01UnderConstruction.html">Javascript</a> &nbsp;</li>
-		<li> <a href="test01Git.html">Git Reference</a> &nbsp;</li>
-    </ul>
-  </div>
-</div>
-	<h2>Index</h2>
-	<ol>
-		<li><a href="#one">General Git Commands</a></li>
-		<li><a href="#two">Branch Specific Commands</a></li>
-		<li><a href="#three">Helpful Terminal Commands</a></li>
-	</ol>
-</nav>
-<main role="main">
-<article role="article">
-
-<header>
-	<h2>Git Reference</h2>
-</header>
-
-<section>
-	<h3>List of Helpfull Git and Terminal Commands</h3>
-	<h4 id="one">General Git Commands</h4>
-	<table style="width:100%">
-  <tr>
-    <th>Command Name</th>
-    <th>Description</th> 
-  </tr>
-  <tr>
-    <td>git --version</td>
-    <td>This will give back the current version of Git</td> 
-  </tr>
-  <tr>
-    <td>git init</td>
-    <td>This will initiate an empty git repository. Before entering this <br>command, cd into the folder that you want to initialize.</td> 
-  </tr>
-    <tr>
-    <td>git add <i>filename</i></td>
-    <td>This will add the file to the staging area. To select all of the files in a folder, replace <i>filename</i> with <i>"."</i></td> 
-  </tr>
-    <tr>
-    <td>git diff</td>
-    <td>This will show what modifications were made between the current staging and the last one.</td> 
-  </tr>
-    <tr>
-    <td>git diff --staged</td>
-    <td></td> 
-  </tr>
-  <tr>
-    <td>git commit -a -m'<i>insert commit message&nbsp;here</i>'</td>
-    <td>This will commit all of the files in your staging area. Be sure to make the <br>commit message descriptive.</td> 
-  </tr>
-    <tr>
-    <td>git status</td>
-    <td>This will show you the files ready to be commited</td> 
-  </tr>
-  </table>
- <h4 id="two">Branch Specific Commands</h4>
-  <table>
-    <tr>
-    <th>Command Name</th>
-    <th>Description</th> 
-  </tr>
-    <tr>
-    <td>git branch</td>
-    <td>Will list all of the branches in the entire repo</td> 
-  </tr>
-    <tr>
-    <td>git branch <i>branchName</i></td>
-    <td>Will create a new branch</td> 
-  </tr>
-    <tr>
-    <td>git checkout <i>branchName</i></td>
-    <td>Will switch to the specified branch</td> 
-  </tr>
-    <tr>
-    <td>git checkout -b <i>branchName</i></td>
-    <td>Will create a new branch and immediately switch over to it. This will help to <br>eliminate errors by letting you just keep going rather then having to switch over to the branch that you just created</td> 
-  </tr>
-    <tr>
-    <td>git merge <i>branchName</i></td>
-    <td>Will merge that branch with the one that you're currently in</td> 
-  </tr>
-    <tr>
-    <td>git branch -d <i>branchName</i></td>
-    <td>Will delete that branch <b><i>if it has already been merged</i></b></td> 
-  </tr>
-    <tr>
-    <td>git branch -D <i>branchName</i></td>
-    <td>Will force a delete <b><i>even if it hasn't been merged</i></b></td> 
-  </tr>
-  </table>
-  <h4 id="three">Helpful Terminal Commands</h4>
- <table>
-    <tr>
-    <th>Command Name</th>
-    <th>Description</th> 
-  </tr>
-  <tr>
-  <td>pwd</td>
-  <td>Show my Present Working Directory</td>
-  </tr>
-  <tr>
-  <td>cd</td>
-  <td>Change Directory</td>
-  </tr>
-  <tr>
-  <td>ls</td>
-  <td>List directories in this current directory</td>
-  </tr>
-  <tr>
-  <td>mkdir</td>
-  <td>MaKe DIRectory</td>
-  </tr>
-  <tr>
-  <td>~</td>
-  <td>Will take you to the main directory (cd ~)</td>
-  </tr>
-  <tr>
-  <td>clear</td>
-  <td>Will clear the terminal window</td>
-  </tr>
-  <tr>
-  <td>../</td>
-  <td>Will take you up a directory (cd ../)</td>
-  </tr>
-</table>
-</section>
-<a href="#top">Back to top</a>
-</article>
-</main>
-<footer role="contentinfo">
-<h5>&copy;Bruce Johnson</h5>
-</footer>
+    <header role="banner">
+        <h1 class="centerText" id="top">Test01</h1>
+    </header>
+    <nav role="navigation">
+        <div id="menu-outer" class="centerText">
+            <div class="table">
+                <ul id="horizontal-list" class="navButtons">
+                    <li> <a href="https://bruce773.github.io/Test01_Webpage/">Home</a> &nbsp;</li>
+                    <li> <a href="test01UnderConstruction.html">Reference</a> &nbsp;</li>
+                    <li> <a href="test01CSS.html">CSS</a> &nbsp;</li>
+                    <li> <a href="test01UnderConstruction.html">Javascript</a> &nbsp;</li>
+                    <li> <a href="test01Git.html">Git Reference</a> &nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Index</h2>
+        <ol>
+            <li><a href="#one">General Git Commands</a></li>
+            <li><a href="#two">Branch Specific Commands</a></li>
+            <li><a href="#three">Helpful Terminal Commands</a></li>
+        </ol>
+    </nav>
+    <main role="main">
+        <article role="article">
+            <header>
+                <h2>Git Reference</h2>
+            </header>
+            <section>
+                <h3>List of Helpfull Git and Terminal Commands</h3>
+                <h4 id="one">General Git Commands</h4>
+                <table style="width:100%">
+                    <tr>
+                        <th>Command Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>git --version</td>
+                        <td>This will give back the current version of Git</td>
+                    </tr>
+                    <tr>
+                        <td>git init</td>
+                        <td>This will initiate an empty git repository. Before entering this
+                            <br>command, cd into the folder that you want to initialize.</td>
+                    </tr>
+                    <tr>
+                        <td>git add <i>filename</i></td>
+                        <td>This will add the file to the staging area. To select all of the files in a folder, replace <i>filename</i> with <i>"."</i></td>
+                    </tr>
+                    <tr>
+                        <td>git diff</td>
+                        <td>This will show what modifications were made between the current staging and the last one.</td>
+                    </tr>
+                    <tr>
+                        <td>git diff --staged</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>git commit -a -m'<i>insert commit message&nbsp;here</i>'</td>
+                        <td>This will commit all of the files in your staging area. Be sure to make the
+                            <br>commit message descriptive.</td>
+                    </tr>
+                    <tr>
+                        <td>git status</td>
+                        <td>This will show you the files ready to be commited</td>
+                    </tr>
+                </table>
+                <h4 id="two">Branch Specific Commands</h4>
+                <table>
+                    <tr>
+                        <th>Command Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>git branch</td>
+                        <td>Will list all of the branches in the entire repo</td>
+                    </tr>
+                    <tr>
+                        <td>git branch <i>branchName</i></td>
+                        <td>Will create a new branch</td>
+                    </tr>
+                    <tr>
+                        <td>git checkout <i>branchName</i></td>
+                        <td>Will switch to the specified branch</td>
+                    </tr>
+                    <tr>
+                        <td>git checkout -b <i>branchName</i></td>
+                        <td>Will create a new branch and immediately switch over to it. This will help to
+                            <br>eliminate errors by letting you just keep going rather then having to switch over to the branch that you just created</td>
+                    </tr>
+                    <tr>
+                        <td>git merge <i>branchName</i></td>
+                        <td>Will merge that branch with the one that you're currently in</td>
+                    </tr>
+                    <tr>
+                        <td>git branch -d <i>branchName</i></td>
+                        <td>Will delete that branch <b><i>if it has already been merged</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>git branch -D <i>branchName</i></td>
+                        <td>Will force a delete <b><i>even if it hasn't been merged</i></b></td>
+                    </tr>
+                </table>
+                <h4 id="three">Helpful Terminal Commands</h4>
+                <table>
+                    <tr>
+                        <th>Command Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td>Show my Present Working Directory</td>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>Change Directory</td>
+                    </tr>
+                    <tr>
+                        <td>ls</td>
+                        <td>List directories in this current directory</td>
+                    </tr>
+                    <tr>
+                        <td>mkdir</td>
+                        <td>MaKe DIRectory</td>
+                    </tr>
+                    <tr>
+                        <td>~</td>
+                        <td>Will take you to the main directory (cd ~)</td>
+                    </tr>
+                    <tr>
+                        <td>clear</td>
+                        <td>Will clear the terminal window</td>
+                    </tr>
+                    <tr>
+                        <td>../</td>
+                        <td>Will take you up a directory (cd ../)</td>
+                    </tr>
+                </table>
+            </section>
+            <a href="#top">Back to top</a>
+        </article>
+    </main>
+    <footer role="contentinfo">
+        <h5>&copy;Bruce Johnson</h5>
+    </footer>
 </body>
+
 </html>
