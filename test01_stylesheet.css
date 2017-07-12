@@ -13,7 +13,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    padding: 0;
+    padding: 0.2em;
     color: rgb(70, 130, 180);
 }
 
@@ -83,7 +83,7 @@ h5 {
 
 a {
     /*color: rgb(72, 129, 234);*/
-    color: lightgray;
+    color: lightblue;
 }
 
 a: hover {
