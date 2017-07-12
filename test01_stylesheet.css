@@ -212,3 +212,7 @@ ul#horizontal-list {
 ul#horizontal-list li {
     display: inline;
 }
+
+li{
+    margin: 3px;
+}
