@@ -44,22 +44,22 @@
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
             <br>
+            <header>
+                <h2>HTML</h2>
+            </header>
             <div class="dropdown">
-            <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">Index <span class="caret"></span></button>
-            <ol class="dropdown-menu">
-                <li><a href="#one"><span class="glyphicon glyphicon-fullscreen"></span> Formating</a></li>
-                <li><a href="#three"><span class="glyphicon glyphicon-credit-card"></span> Block vs. In-line</a></li>
-                <li><a href="#two"><span class="glyphicon glyphicon-list"></span> Lists</a></li>
-            </ol>
+                <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">Index <span class="caret"></span></button>
+                <ol class="dropdown-menu">
+                    <li><a href="#one"><span class="glyphicon glyphicon-fullscreen"></span> Formating</a></li>
+                    <li><a href="#three"><span class="glyphicon glyphicon-credit-card"></span> Block vs. In-line</a></li>
+                    <li><a href="#two"><span class="glyphicon glyphicon-list"></span> Lists</a></li>
+                </ol>
             </div>
             </nav>
             <main role="main">
                 <article role="article">
-                    <header>
-                    <br>
-                        <h2>HTML</h2>
-                    </header>
                     <section>
+                    <br>
                         <h3 id="one"><span class="glyphicon glyphicon-fullscreen"></span> Formating</h3>
                         <p>I can display HTML code using the &lt;pre&gt; &lt;/pre&gt; tags and by using the <b><i>name&nbsp;character&nbsp;entity</i></b> feature of HTML: &amp;amp; <i>the special character goes here</i> </p>
                         <!--The nbsp stands for Non-Breaking SPace-->
@@ -79,32 +79,54 @@
                     </section>
                     <section>
                         <h3 id="two"><span class="glyphicon glyphicon-list"></span> Lists</h3>
-                        <p>Lists can be very helpful when you're trying to display a group of information that be longs together. There are several different types of lists. The three that I use are called Unordered, Ordered, and Descriptive. This is an example of an unordered list:</p>
-                        <p><pre><code>&lt;ul&gt;
+                        <p>Lists can be very helpful when you're trying to display a group of information that be longs together. There are several different types of lists. The three that I use are called Unordered, Ordered, and Descriptive. <i>Click the button below to view the code.</i></p>
+                        <p>
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">View Example »</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">List Example</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p> This is an example of an unordered list:<pre><code>&lt;ul&gt;
   &lt;li&gt;Item #1&lt;/li&gt;
   &lt;li&gt;Item #2&lt;/li&gt;
   &lt;li&gt;Item #3&lt;/li&gt;
 &lt;/ul&gt;</code></pre></p>
-                        <p>This is an example of an ordered list:</p>
-                        <p><pre><code>&lt;ol&gt;
+                                            <p>This is an example of an ordered list:</p>
+                                            <p><pre><code>&lt;ol&gt;
   &lt;li&gt;Item #1&lt;/li&gt;
   &lt;li&gt;Item #2&lt;/li&gt;
   &lt;li&gt;Item #3&lt;/li&gt;
 &lt;/ol&gt;</code></pre></p>
-                        <p>This is an example of an descriptive list:</p>
-                        <p><pre><code>&lt;dl&gt;
+                                            <p>This is an example of an descriptive list:</p>
+                                            <p><pre><code>&lt;dl&gt;
   &lt;dt&gt;Item #1&lt;/dt&gt;
   &lt;dd&gt;Description of Item #1&lt;/dd&gt;
   &lt;dt&gt;Item #2&lt;/dt&gt;
   &lt;dd&gt;Description of Item #2&lt;/dd&gt;
-&lt;/dl&gt;</code></pre></p>
+&lt;/dl&gt;</code></pre>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
                     </section>
                     <a class="btn btn-md btn-primary" href="#top" role="button">Back to top »</a>
                     <footer role="contentinfo">
                         <h5>&copy;Bruce Johnson</h5>
                     </footer>
         </div>
-    </div> 
+    </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->

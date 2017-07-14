@@ -69,11 +69,26 @@
                         </div>
                     </nav>
                     <section>
+                        <br>
                         <h3 id="one"><span class="glyphicon glyphicon-triangle-top"></span> The Basics</h3>
-                        <p>CSS stands for Cascading Style Sheets. It allows you to style your web-pages in very specific ways. Primarily, you can style your web-page in three ways using CSS syntax (In-line, Embedded, and External) (1)In-line styling: </p>
-                        <pre><code>&lt;h1 color:red; font-weight:normal;&gt;This text will be affected by both of those properties &lt;/h1&gt;</code></pre>
-                        <p>(2)Embedded styling using the Style element (this will make a global h1 selector):</p>
-                        <pre><code>&lt;head&gt;
+                        <p>CSS stands for Cascading Style Sheets. It allows you to style your web-pages in very specific ways. Primarily, you can style your web-page in three ways using CSS syntax (In-line, Embedded, and External)</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Example »</button>
+                        <br>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">CSS Styling</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p> (1)In-line styling:
+                                            <pre><code>&lt;h1 color:red; font-weight:normal;&gt;This text will be affected by both of those properties &lt;/h1&gt;</code></pre>
+                                            <p>(2)Embedded styling using the Style element (this will make a global h1 selector):</p>
+                                            <pre><code>&lt;head&gt;
   &lt;style&gt;
      h1 {
       color:red;
@@ -83,7 +98,15 @@
 &lt;/head&gt;
 &lt;body&gt;
   &lt;h1&gt;This text will be affected by both of those properties&lt;/h1&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</code></pre></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                         <p>(3)Externalized styling using the link element. The same syntax that we used above, as far as CSS syntax, also applies here.First, you need to create a normal text document (the same as you did for HTML). Then, copy all of your CSS code into it. When you go to save it, save it as a .css file. Then, in the HTML file that you want to link to, place this line of code in the head:</p>
                         <pre><code>&lt;head&gt;
   &lt;link href="<i>yourCssFileName.css</i>" rel="stylesheet" type="text/css"&gt;
@@ -93,7 +116,19 @@
                     <section>
                         <h3 id="two"><span class="glyphicon glyphicon-education"></span> Using Classes</h3>
                         <p>You can also use CSS to make non-global selectors. Meaning, only elements with their class set with the same value as the class in the head will be affected. This also means that you can apply this class to <b>any</b> element.</p>
-                        <pre><code>&lt;head&gt;
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">View Example »</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal2" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">CSS Classes</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code>&lt;head&gt;
   &lt;style&gt;
      .alert {
       color:red;
@@ -105,8 +140,8 @@
   &lt;h1 class="alert"&gt;This text will be affected by both of those properties&lt;/h1&gt;
   &lt;h1 class="alert"&gt;This text will also be affected by both of those properties&lt;/h1&gt;
 &lt;/body&gt;</code></pre>
-                        <p>This will make a non-global selector that will <b>only</b> apply to h2s with their classes set to alert:</p>
-                        <pre><code>&lt;head&gt;
+                                        <p>This will make a non-global selector that will <b>only</b> apply to h2s with their classes set to alert:</p>
+                                        <pre><code>&lt;head&gt;
   &lt;style&gt;
      h2.alert {
       color:red;
@@ -118,8 +153,16 @@
   &lt;h2 class="alert"&gt;This text will be affected by both of those properties&lt;/h2&gt;
   &lt;h2&gt;This text will <b>not</b> be affected by both of those properties&lt;/h2&gt;
 &lt;/body&gt;</code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <section>
+                    <br>
                         <h3 id="three"><span class="glyphicon glyphicon-font"></span> Dealing with Fonts</h3>
                         <p>There is a <b>very</b> big list of things CSS can style in the fonts category. A few of them are: font-size, font-family, font-weight, font-style.</p>
                         <h4 id="four"><span class="glyphicon glyphicon-resize-full"> Font-Size</h4>
