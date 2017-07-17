@@ -16,29 +16,33 @@
 
 <body>
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+    <div class="navbar-wrapper">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <!--These are the line icons that appear when the nav bar is minimized-->
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-folder-open"> Test01</span></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="disabled"><a href="">Reference</a></li>
-                    <li><a href="test01CSS.html">CSS</a></li>
-                    <li class="disabled"><a href="">Javascript</a></li>
-                    <li><a href="test01Git.html">Git Reference</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+            <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <!--These are the line icons that appear when the nav bar is minimized-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-folder-open"> Test01</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="disabled"><a href="">Reference</a></li>
+                        <li><a href="test01CSS.html">CSS</a></li>
+                        <li class="disabled"><a href="">Javascript</a></li>
+                        <li><a href="test01Git.html">Git Reference</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+                </div>
         </div>
+    </div>
     </nav>
     <div class="container">
         <!-- Main component for a primary marketing message or call to action -->
@@ -59,7 +63,7 @@
             <main role="main">
                 <article role="article">
                     <section>
-                    <br>
+                        <br>
                         <h3 id="one"><span class="glyphicon glyphicon-fullscreen"></span> Formating</h3>
                         <p>I can display HTML code using the &lt;pre&gt; &lt;/pre&gt; tags and by using the <b><i>name&nbsp;character&nbsp;entity</i></b> feature of HTML: &amp;amp; <i>the special character goes here</i> </p>
                         <!--The nbsp stands for Non-Breaking SPace-->
