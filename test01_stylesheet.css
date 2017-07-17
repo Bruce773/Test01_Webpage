@@ -1,6 +1,6 @@
 html,
 body {
-   /* Beccapurple */
+    /* Beccapurple */
     /*background: rgb(176, 196, 222);*/
     /*max-width: 1200px;*/
     margin: 0 auto;
@@ -213,10 +213,14 @@ ul#horizontal-list li {
     display: inline;
 }
 
-li{
+li {
     margin: 3px;
 }
 
-.fixed{
+.fixed {
     position: fixed;
+}
+
+.subList {
+    margin-left: 20px;
 }
