@@ -51,7 +51,7 @@
                         <h2>CSS</h2>
                     </header>
                     <nav>
-                        <div class="dropdown">
+                        <div id="one" class="dropdown">
                             <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">Index <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="#one"><span class="glyphicon glyphicon-triangle-top"></span> The basics</a></li>
@@ -68,7 +68,7 @@
                     </nav>
                     <section>
                         <br>
-                        <h3 id="one"><span class="glyphicon glyphicon-triangle-top"></span> The Basics</h3>
+                        <h3><span class="glyphicon glyphicon-triangle-top"></span> The Basics</h3>
                         <p>CSS stands for Cascading Style Sheets. It allows you to style your web-pages in very specific ways. Primarily, you can style your web-page in three ways using CSS syntax (In-line, Embedded, and External) <div><img src="CSS_picture.jpg" width="250" height="160" class="flowRight hidden-sm hidden-xs" ></div></p>
                         <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">View Example »</button>
@@ -106,13 +106,13 @@
                         </div>
                         <br>
                         <p>(3)Externalized styling using the link element. The same syntax that we used above, as far as CSS syntax, also applies here.First, you need to create a normal text document (the same as you did for HTML). Then, copy all of your CSS code into it. When you go to save it, save it as a .css file. Then, in the HTML file that you want to link to, place this line of code in the head:</p>
-                        <pre><code>&lt;head&gt;
+                        <pre id="two"><code>&lt;head&gt;
   &lt;link href="<i>yourCssFileName.css</i>" rel="stylesheet" type="text/css"&gt;
 &lt;/head&gt;
 </code></pre>
                     </section>
                     <section>
-                        <h3 id="two"><span class="glyphicon glyphicon-education"></span> Using Classes</h3>
+                        <h3><span class="glyphicon glyphicon-education"></span> Using Classes</h3>
                         <p>You can also use CSS to make non-global selectors. Meaning, only elements with their class set with the same value as the class in the head will be affected. This also means that you can apply this class to <b>any</b> element. <img class="flowRight hidden-sm hidden-xs" src="css_concept_photo.png" width="450" height="160"></p>
                         <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">View Example »</button>
