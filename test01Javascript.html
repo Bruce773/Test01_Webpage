@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,9 +32,9 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li  class="disabled"><a href="">Reference</a></li>
+                    <li class="disabled"><a href="">Reference</a></li>
                     <li><a href="test01CSS.html">CSS</a></li>
-                    <li class="active"  class="disabled"><a href="">Javascript</a></li>
+                    <li class="active"><a href="test01Javascript.html">Javascript</a></li>
                     <li><a href="test01Git.html">Git Reference</a></li>
                 </ul>
             </div>
@@ -42,52 +43,30 @@
     </nav>
     <main role="main">
         <article role="article">
+        <div class="jumbotron">
             <header></header>
             <section></section>
             <section>
                 <aside role="complementary"></aside>
             </section>
         </article>
+        <br>
+        <div id="date-container"></div>
     </main>
     <footer role="contentinfo">
         <br>
         <h5>&copy;Bruce Johnson</h5>
     </footer>
-    <script type="text/javascript">
-    //tabbed panels
-    //display globals to hold all the links and all the panel elements
-    var tabLinks;
-    var tabPanels;
-    window.onload = function() {
-        //set teh initial panel state
-        //listen for clicks on tabs
-        //When the pages loads, grab the li elements
-        tabLinks = document.getElementById("tabs").getElementsByTagName("li");
-        //Now get all the tab panel container divs
-        tabPanels = document.getElementById("containers").getElementsByTagName("div");
-        //activate the _first_ one
-        displayPanel(tabLinks[0]); //Javascript starts counting at 0 
-        //attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
-        for (var i = 0; i < tabLinks.length; i++) {
-            tabLinks[i].onclick = function()[]
-        }
-
-    }
-
-    function displayPanel() {
-        //respond to tab clicks
-        //change panel display and activate tabs
-
-    }
-    </script>
-</body>
-    <!-- /container -->
-    <!-- Bootstrap core JavaScript
+    </div>
+    <script src="test01_scripts.js" type="text/javascript"></script>
+<!-- /container -->
+<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 
 </html>
