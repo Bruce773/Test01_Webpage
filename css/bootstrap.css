@@ -7,6 +7,14 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+/*-----------------------------------------------*/
+/* My custom stylesheets begin around line 8045*/
+/*-----------------------------------------------*/
+
+/*--------------------*/
+/*Bootstrap styles*/
+/*--------------------*/
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -228,12 +236,13 @@ th {
 }
 
 
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
     *,
-    :after,
-    :before {
+     :after,
+     :before {
         background: transparent!important;
         color: #000!important;
         -webkit-box-shadow: none!important;
@@ -8035,6 +8044,11 @@ button.close {
     }
 }
 
+
+/*-------------------------------*/
+/*My custom styles start here*/
+/*------------------------------*/
+
 body,
 html {
     margin: 0 auto
@@ -8251,7 +8265,7 @@ li {
     margin-left: 20px;
 }
 
-.padding-top-bottom{
-	padding-top: 15px;
-	padding-bottom: 10px;
+.padding-top-bottom {
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
