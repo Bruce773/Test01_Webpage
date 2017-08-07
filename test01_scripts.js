@@ -42,7 +42,7 @@ function newToDoItem() {
     var tdescr = document.createTextNode(inputValueDescr);
     var br = document.createElement("br");
     li.appendChild(t);
-    // t.classList.add("to-do-item-title");
+    // .classList.add("to-do-item-title");
     if (inputValueDescr === '') {
         tdescr.nodeValue = "";
     } else {

@@ -248,6 +248,7 @@ th {
 
 
 
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
@@ -8057,6 +8058,7 @@ button.close {
 
 
 
+
 /*-------------------------------*/
 
 
@@ -8295,28 +8297,12 @@ li {
 }
 
 ul li.checked {
-    background: #888;
+    background: seagreen;
+    border-radius: 15px;
     color: #fff;
     text-decoration: line-through;
-    padding: 1%;
+    padding: 0.7%;
 }
-
-
-/* Add a "checked" mark when clicked on */
-
-
-/*ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 10px;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}*/
 
 .formatted-text {
     white-space: pre-wrap;
@@ -8326,3 +8312,15 @@ ul li.checked {
     text-decoration: underline;
     text-decoration: bold;
 }
+
+.to-do-item:hover {
+    background-color: gray;
+}
+
+.to-do-item {
+    padding: 0.7%;
+    border-radius: 15px;
+    background-color: lightgray;
+    list-style: none;
+}
+
