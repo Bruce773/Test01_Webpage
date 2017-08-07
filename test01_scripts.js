@@ -52,9 +52,10 @@ function newToDoItem() {
     li.classList.add("formatted-text");
     var span = document.createElement("span");
     var txt = document.createTextNode("x");
-    span.className = "close";
+    span.className = "close-x";
     span.appendChild(txt);
     li.appendChild(span);
+    console.log('Span created');
     if (inputValue === '') {
         alert("You haven't named the To-Do");
     } else {
