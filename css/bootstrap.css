@@ -7,12 +7,22 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-/*-----------------------------------------------*/
-/* My custom stylesheets begin around line 8045*/
+
 /*-----------------------------------------------*/
 
+
+/* My custom stylesheets begin around line 8045*/
+
+
+/*-----------------------------------------------*/
+
+
 /*--------------------*/
+
+
 /*Bootstrap styles*/
+
+
 /*--------------------*/
 
 html {
@@ -234,6 +244,7 @@ td,
 th {
     padding: 0
 }
+
 
 
 
@@ -8045,8 +8056,13 @@ button.close {
 }
 
 
+
 /*-------------------------------*/
+
+
 /*My custom styles start here*/
+
+
 /*------------------------------*/
 
 body,
@@ -8272,7 +8288,6 @@ li {
 
 .form-button-inline {
     display: inline-block;
-
 }
 
 .form-input-inline {
@@ -8280,13 +8295,16 @@ li {
 }
 
 ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-padding:1%;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    padding: 1%;
 }
 
+
 /* Add a "checked" mark when clicked on */
+
+
 /*ul li.checked::before {
   content: '';
   position: absolute;
@@ -8299,4 +8317,12 @@ padding:1%;
   height: 15px;
   width: 7px;
 }*/
-    
+
+.formatted-text {
+    white-space: pre-wrap;
+}
+
+.to-do-item-title {
+    text-decoration: underline;
+    text-decoration: bold;
+}

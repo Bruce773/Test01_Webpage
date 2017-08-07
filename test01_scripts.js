@@ -37,16 +37,24 @@ function newToDoItem() {
     var li = document.createElement("li");
     li.className = "to-do-item";
     var inputValue = document.getElementById("myInput").value;
+    var inputValueDescr = document.getElementById("myInputDescr").value;
     var t = document.createTextNode(inputValue);
+    var tdescr = document.createTextNode(inputValueDescr);
+    var br = document.createElement("br");
     li.appendChild(t);
+    // t.classList.add("to-do-item-title");
+    if (inputValueDescr === '') {
+        tdescr.nodeValue = "";
+    } else {
+        li.appendChild(br); //Adds the break when a description is added to the to-do
+    }
+    li.appendChild(tdescr);
+    li.classList.add("formatted-text");
     var span = document.createElement("span");
     var txt = document.createTextNode("x");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-    // var myNodelist = document.getElementsByTagName("li.to-do-item");
-    // var myNodelist = document.querySelectorAll('ul.to-do-item')
-
     if (inputValue === '') {
         alert("You haven't named the To-Do");
     } else {
@@ -54,22 +62,24 @@ function newToDoItem() {
         document.getElementById("myInput").value = ''; //This clears the input field after submission
     }
 
-    // var list = document.getElementById("myUL");
-    // list.addEventListener('click', function(ev) {
-    //     if (ev.target.tagName === 'LI') {
-    //         ev.target.classList.toggle('checked');
-    //     }
-    // }, false);
+    if (inputValueDescr === '') {
+        tdescr.nodeValue = "";
+    } 
+    else if (inputValueDescr === '' && inputValue === '') {
+        alert("You haven't named the To-Do");
+    }
+    else if (inputValue===''){
+        alert("You haven't named the To-Do");
+    }
+    else {
+        document.getElementById("myUL").appendChild(li);
+        document.getElementById("myInputDescr").value = ''; //This clears the textarea field after submission
+    }
 
     li.onclick = function() {
-        // var className = li.getAttribute("class");
-        // if (className == "") {
-        //     li.className = "li.checked";
-        // } else {
-        //     li.className = "li.checked";
-        // }
         var x = document.getElementsByClassName('to-do-item');
-        x.classList.toggle(".checked");
+        x.classList.add("checked");
+        x.classList.toggle("checked");
     }
 
     var close = document.getElementsByClassName("close");
@@ -79,9 +89,6 @@ function newToDoItem() {
         div.style.display = "none";
     }
 }
-// var div = this.parentElement;
-// div.style.display = "none";
-
 document.getElementById('submit-fix').addEventListener('submit', function(e) { //This function removes the default reload property of the form
     e.preventDefault();
     newToDoItem();
