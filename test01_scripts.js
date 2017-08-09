@@ -55,7 +55,7 @@ function newToDoItem() {
     span.className = "close-x";
     span.appendChild(txt);
     li.appendChild(span);
-    console.log('Span created');
+
     if (inputValue === '') {
         alert("You haven't named the To-Do");
     } else {
