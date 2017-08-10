@@ -26,12 +26,12 @@ var interval = setInterval(runTheClock, 1000);
 // ---------------------------
 
 // Add a "checked" symbol when clicking on a list item
-var list = document.getElementById("myUL");
-list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-    }
-}, false);
+// var list = document.getElementById("myUL");
+// list.addEventListener('click', function(ev) {
+//     if (ev.target.tagName === 'LI') {
+//         ev.target.classList.toggle('checked');
+//     }
+// }, false);
 
 function newToDoItem() {
     var li = document.createElement("li");
@@ -65,14 +65,11 @@ function newToDoItem() {
 
     if (inputValueDescr === '') {
         tdescr.nodeValue = "";
-    } 
-    else if (inputValueDescr === '' && inputValue === '') {
+    } else if (inputValueDescr === '' && inputValue === '') {
         alert("You haven't named the To-Do");
-    }
-    else if (inputValue===''){
+    } else if (inputValue === '') {
         alert("You haven't named the To-Do");
-    }
-    else {
+    } else {
         document.getElementById("myUL").appendChild(li);
         document.getElementById("myInputDescr").value = ''; //This clears the textarea field after submission
     }
@@ -90,7 +87,42 @@ function newToDoItem() {
         div.style.display = "none";
     }
 }
-document.getElementById('submit-fix').addEventListener('submit', function(e) { //This function removes the default reload property of the form
-    e.preventDefault();
-    newToDoItem();
-}, false);
+
+
+if (document.getElementById("myUL")) {
+    var list = document.getElementById("myUL");
+    list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+        }
+    }, false);
+
+}
+
+if (document.getElementById('submit-fix')) {
+    document.getElementById('submit-fix').addEventListener('submit', function(e) { //This function removes the default reload property of the form
+        e.preventDefault();
+        newToDoItem();
+    }, false);
+
+}
+
+// -----------------------------
+// Scrpits for the CSS practice 
+// -----------------------------
+
+function setCssProperty() {
+    var inputValue2 = document.getElementById("myInput2").value;
+    document.getElementById("cssTest").setAttribute("style", inputValue2 + 'display: inline-block;padding-left:10px;');
+    document.getElementById("myInput2").value = '';
+
+}
+
+// var formSubmit = document.getElementById('submit-fix2');
+
+if (document.getElementById('cssExcersizeForm')) {
+    document.getElementById('cssExcersizeForm').addEventListener('submit', function(e) { //This function removes the default reload property of the form
+        e.preventDefault();
+        setCssProperty();
+    }, false);
+}
