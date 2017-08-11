@@ -25,14 +25,6 @@ var interval = setInterval(runTheClock, 1000);
 // Scripts for the To-Do App
 // ---------------------------
 
-// Add a "checked" symbol when clicking on a list item
-// var list = document.getElementById("myUL");
-// list.addEventListener('click', function(ev) {
-//     if (ev.target.tagName === 'LI') {
-//         ev.target.classList.toggle('checked');
-//     }
-// }, false);
-
 function newToDoItem() {
     var li = document.createElement("li");
     li.className = "to-do-item";
@@ -42,11 +34,10 @@ function newToDoItem() {
     var tdescr = document.createTextNode(inputValueDescr);
     var br = document.createElement("br");
     li.appendChild(t);
-    // .classList.add("to-do-item-title");
-    if (inputValueDescr === '') {
-        tdescr.nodeValue = "";
-    } else {
-        li.appendChild(br); //Adds the break when a description is added to the to-do
+    if (inputValueDescr === '') { //If the description field is empty
+        tdescr.nodeValue = ""; //Leave the description section in the to-do item blank
+    } else { //If the description field isn't empty 
+        li.appendChild(br); //Add a break after the title section in the To-Do
     }
     li.appendChild(tdescr);
     li.classList.add("formatted-text");
@@ -74,20 +65,31 @@ function newToDoItem() {
         document.getElementById("myInputDescr").value = ''; //This clears the textarea field after submission
     }
 
-    li.onclick = function() {
-        var x = document.getElementsByClassName('to-do-item');
-        x.classList.add("checked");
-        x.classList.toggle("checked");
+    var close = document.getElementsByClassName("close-x");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
     }
-
-    var close = document.getElementsByClassName("close");
-    span.onclick = function() {
-        console.log("Close");
-        var div = this.parentElement;
-        div.style.display = "none";
-    }
+    localStorage.setItem('todos', document.getElementById('myUL').innerHTML);
+    return false;
 }
 
+function unorderedListLoad() {
+    if (localStorage.getItem('todos')) {
+        document.getElementById('myUL').innerHTML = localStorage.getItem('todos');
+    }
+    var close = document.getElementsByClassName("close-x");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+};
 
 if (document.getElementById("myUL")) {
     var list = document.getElementById("myUL");
@@ -95,6 +97,8 @@ if (document.getElementById("myUL")) {
         if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
         }
+        localStorage.setItem('todos', document.getElementById('myUL').innerHTML);
+        return false;
     }, false);
 
 }
@@ -117,8 +121,6 @@ function setCssProperty() {
     document.getElementById("myInput2").value = '';
 
 }
-
-// var formSubmit = document.getElementById('submit-fix2');
 
 if (document.getElementById('cssExcersizeForm')) {
     document.getElementById('cssExcersizeForm').addEventListener('submit', function(e) { //This function removes the default reload property of the form
