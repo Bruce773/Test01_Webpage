@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
+    <div id="fb-root"></div>
     <!-- Static navbar -->
     <div class="navbar-wrapper">
         <div class="container">
@@ -142,6 +142,19 @@
                     </footer>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBOBzVg6jG7n79ob9KWoX4it0K6quQn9NQ",
+        authDomain: "test01-42723.firebaseapp.com",
+        databaseURL: "https://test01-42723.firebaseio.com",
+        projectId: "test01-42723",
+        storageBucket: "",
+        messagingSenderId: "965899188247"
+    };
+    firebase.initializeApp(config);
+    </script>
     <script src="test01_scripts.js" type="text/javascript"></script>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
