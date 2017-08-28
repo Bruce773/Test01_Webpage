@@ -73,7 +73,7 @@ function newToDoItem() {
             div.style.display = "none";
         }
     }
-    localStorage.setItem('todos', document.getElementById('myUL').innerHTML);
+    localStorage.setItem('todos', document.getElementById('myUL').innerHTML); //Will add the entire inner HTML of the element with the ID of myUL to localStorage
     return false;
 }
 
@@ -97,7 +97,7 @@ if (document.getElementById("myUL")) {
         if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
         }
-        localStorage.setItem('todos', document.getElementById('myUL').innerHTML);
+        localStorage.setItem('todos', document.getElementById('myUL').innerHTML); //will get the element with the ID of myUL and set it's inner HTML to equal what's in localStorage
         return false;
     }, false);
 
