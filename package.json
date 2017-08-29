@@ -1,0 +1,32 @@
+{
+  "name": "test01_webpage",
+  "version": "1.0.0",
+  "description": "the JASON pakage for the Test01 Webpage",
+  "main": "bootstrap.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruce773/Test01_Webpage.git"
+  },
+  "author": "Bruce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bruce773/Test01_Webpage/issues"
+  },
+  "homepage": "https://github.com/Bruce773/Test01_Webpage",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "httpster": "^1.0.3",
+    "jshint": "^2.9.5",
+    "node-notifier": "^5.1.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "node-dev": "^3.1.3"
+  }
+}
