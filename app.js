@@ -2,6 +2,8 @@ var express = require("express");
 
 var app = express();
 
+var port = 3000
+
 app.use(function(req, resp, next){
 
 	console.log(`${req.method} request made for '${req.url}'`); //this prints to the console whenever a request is made to Express
@@ -10,8 +12,8 @@ app.use(function(req, resp, next){
 
 app.use(express.static("../Test01_Webpage"));
 
-app.listen(3000);
+app.listen(port);
 
-console.log("Test01 Website running on port 3000");
+console.log("Test01 Website running on port " + port);
 
 module.exports = app;
