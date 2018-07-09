@@ -26,10 +26,10 @@ var interval = setInterval(runTheClock, 1000);
 // ---------------------------
 
 function newToDoItem() {
-    var li = document.createElement("li");
-    li.className = "to-do-item";
-    var inputValue = document.getElementById("myInput").value;
-    var inputValueDescr = document.getElementById("myInputDescr").value;
+    var li = document.createElement("li");//Creates a list item
+    li.className = "to-do-item";//Gives the list item a class of to-do-item
+    var inputValue = document.getElementById("myInput").value;//Grabs the text value from the element with an ID of myInput and assigns it to inputValue
+    var inputValueDescr = document.getElementById("myInputDescr").value;//Grabs the text value from the element with an ID of myInputDecr and assings it to inputValueDescr
     var t = document.createTextNode(inputValue);
     var tdescr = document.createTextNode(inputValueDescr);
     var br = document.createElement("br");
